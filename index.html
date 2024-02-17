@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spotless Hungry Crocodile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        height:auto;
+        background-color:var(--dl-color-custom-secondary1);
+        font-family: 'Helvetica', sans-serif;
+        color: #333; /* Dark text color */
+
+
+      }
+        .test {
+        display: flex;
+        flex-direction: row;
+        
+        
+      }
+
+      .card {
+        border: 1px solid #dadada;
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        /* Remove fixed width and use flexbox for responsiveness */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Remove fixed margins and use margin percentages for responsiveness */
+        margin: 5% auto; /* 5% top and bottom, centered horizontally */
+        padding: 0px; /* Add some padding for content */
+      }
+
+
+      
+      .card:hover {
+        box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .card .container {
+        padding: 2px 14px;
+      }
+
+      .card p {
+        margin: 14px 0;
+      }
+      .card .card-img-top{
+        height: 200px;
+        object-fit: fill;
+      }
+      
+      .cid-u1y3r46AlZ  .navbar-logo {
+        margin: 0 !important;
+      }
+      @media (max-width: 767px) {
+        .cid-u1y3r46AlZ  .navbar-logo {
+          padding-left: 0;
+        }
+      .wide{
+      display: block;
+      
+      margin-top: auto ;
+      margin: 0 auto;
+      width: 1100px;
+    }
+      #blurry-image {
+      
+      
+      filter: blur(5px);
+      width: 100%;
+      height: 630px;
+      object-fit: fill;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    
+    
+    #current-carousel-image{
+        
+        padding-top: 30px;
+    }
+    #carouselExampleIndicators {
+        position: relative;
+        z-index: 2;
+    }
+}
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+      
+      <div class="home-container">
+        <div class="home-header">
+          <header
+            data-thq="thq-navbar"
+            class="navbarContainer home-navbar-interactive"
+          >
+          <span class="navbar-logo">
+            <!-- <a href="https://mobiri.se"> -->
+              <img src="images/logo main.png" style="height: 4.3rem;">
+            </a>
+          </span>
+            <span class="logo">CARBON</span>
+            <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+              <nav class="home-links">
+                <span class="bodySmall"><a href="milege.html">Calculate</a></span>
+                <span class="home-nav22 bodySmall"><a href="reduce.html">Reduce</a></span>
+                <span class="home-nav32 bodySmall"><a href="measure.html">Measures</a></span>
+                <span class="home-nav52 bodySmall"><a href="contact.html">Contact</a></span>
+              </nav>
+              
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon socialIcons">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              data-thq="thq-mobile-menu"
+              class="home-mobile-menu1 mobileMenu"
+            >
+              <div class="home-nav">
+                <div class="home-top">
+                  <span class="logo">CARBON</span>
+                  <div data-thq="thq-close-menu" class="home-close-menu">
+                    <svg
+                      viewBox="0 0 1024 1024"
+                      class="home-icon02 socialIcons"
+                    >
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="home-links1">
+                  <span class="home-nav121 bodySmall"><a href="milege.html">Calculate</a></span>
+                  <span class="home-nav221 bodySmall"><a href="reduce.html">Reduce</a></span>  
+                  <span class="home-nav421 bodySmall"><a href="measure.html">Measures</a></span>
+                  <span class="home-nav521 bodySmall"><a href="contact.html">Contact</a></span>
+                </nav>
+              </div>
+              <div>
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="home-icon04 socialIcons"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="home-icon06 socialIcons"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="home-icon08 socialIcons"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="home-hero">
+          <div class="heroContainer home-hero1">
+            <div class="home-container01">
+              <h1 class="home-hero-heading heading1">
+                Calculate Your Carbon Footprint
+              </h1>
+              <span class="home-hero-sub-heading bodyLarge">
+                <span>
+                  <span>
+                    <span>Reduce Your Impact on the Environment</span>
+                    <span></span>
+                  </span>
+                  <span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                  <span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </span>
+              </span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="wide">
+          <div id="blurry-image"></div>
+          <div class="wide">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <video preload="true" loop="loop" muted data-poster="/vizpro/images/mov-2.png" autoplay="true" playsinline="true"width="1500" height="600">
+                        <source src="video/video1.mp4" type="video/mp4">
+                      <video>
+                    </div>
+                    <div class="carousel-item">
+                      <video preload="true" loop="loop" muted data-poster="/vizpro/images/mov-2.png" autoplay="true" playsinline="true"width="1500" height="600">
+                        <source src="video/video2.mp4" type="video/mp4">
+                      <video>
+                    </div>
+                    <div class="carousel-item">
+                      <video preload="true" loop="loop" muted data-poster="/vizpro/images/mov-2.png" autoplay="true" playsinline="true"width="1500" height="600">
+                        <source src="video/video3.mp4" type="video/mp4">
+                      <video>
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          </div>
+        <div class="test">
+          <div class="card" style="width: 18rem;">
+            <img src="images/image 1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Calculate Footprint </h5>
+              <p class="card-text">Identify key factors: energy, transportation, food, waste, and consumption,and what you can do to neutralize carbon emission.</p>
+              <a href="milege.html" class="btn btn-primary">To Calculate</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;"> 
+            <img src="images/image7.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Reduce</h5>
+              <p class="card-text">Reduce energy usage at home by turning off lights, using energy-efficient appliances, and insulating your home.</p>
+              <a href="reduce.html" class="btn btn-primary">To Know More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/image2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Measures </h5>
+              <p class="card-text">Use renewable energy, recycle, plant trees, use public transport, buy local products, and limit water usage.</p>
+              <a href="#" class="btn btn-primary">To Know More</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="home-features">
+          <div class="featuresContainer">
+            <div class="home-features1">
+              <div class="home-container02">
+                <span class="overline">
+                  <span>features</span>
+                  <br />
+                </span>
+                <h2 class="home-features-heading heading2">Our Features</h2>
+                <span class="home-features-sub-heading bodyLarge">
+                  <span>
+                    <span>
+                      <span>
+                        Discover how our website can help you make a positive
+                        impact
+                      </span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="home-container03">
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Carbon Footprint Calculation</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>Calculate your carbon footprint with ease</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Personalized Recommendations</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Receive tailored suggestions to reduce your carbon
+                        footprint
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Track Progress</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Monitor your carbon reduction efforts over time
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Educational Resources</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Access a library of resources to learn more about
+                        sustainability
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-banner">
+          <div class="bannerContainer home-banner1">
+            <h1 class="home-banner-heading heading2">
+              Take Control of Your Carbon Footprint
+            </h1>
+            <span class="home-banner-sub-heading bodySmall">
+              <span>
+                <span>
+                  <span>
+                    Our carbon footprint calculating website helps you
+                    understand your impact on the environment and provides
+                    measures to reduce it. By calculating your carbon footprint,
+                    you can make informed decisions and take steps towards a
+                    more sustainable lifestyle.
+                  </span>
+                  <span></span>
+                </span>
+                <span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </span>
+              <span>
+                <span>
+                  <span></span>
+                  <span></span>
+                </span>
+                <span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </span>
+            </span>
+            
+          </div>
+        </div>
+        <div class="home-faq">
+          <div class="faqContainer">
+            <div class="home-faq1">
+              <div class="home-container26">
+                <span class="overline">
+                  <span>FAQ</span>
+                  <br />
+                </span>
+                <h2 class="home-text82 heading2">Common questions</h2>
+                <span class="home-text83 bodyLarge">
+                  <span>
+                    Here are some of the most common questions that we get.
+                  </span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-container27">
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>What is a carbon footprint?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      A carbon footprint is the total amount of greenhouse
+                      gases, primarily carbon dioxide, emitted directly or
+                      indirectly by an individual, organization, event, or
+                      product.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>Why should I calculate my carbon footprint?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      Calculating your carbon footprint helps you understand the
+                      impact of your activities on the environment and allows
+                      you to take measures to reduce your emissions.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>How can I calculate my carbon footprint?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      You can calculate your carbon footprint by considering
+                      factors such as energy usage, transportation, waste
+                      generation, and lifestyle choices. Our website provides a
+                      user-friendly calculator to help you determine your carbon
+                      footprint.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>
+                      What measures can I take to reduce my carbon footprint?
+                    </span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      There are several measures you can take to reduce your
+                      carbon footprint, such as conserving energy, using
+                      renewable energy sources, reducing waste, adopting
+                      sustainable transportation options, and making
+                      eco-friendly lifestyle choices.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>Can I offset my carbon emissions?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      Yes, you can offset your carbon emissions by supporting
+                      projects that reduce greenhouse gas emissions or remove
+                      carbon dioxide from the atmosphere. Our website provides
+                      information on carbon offsetting options.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+      
+    ></script>
+    <script src="script2.js"></script>
+  </body>
+</html>

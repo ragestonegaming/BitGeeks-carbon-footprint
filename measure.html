@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Living Sustainably</title>
+  <style>
+    /* Card Styles */
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .card {
+      width: calc(33.33% - 20px);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #f9f9f9; /* Default card background color */
+    }
+
+    /* Card Colors */
+    .card.healthy-living {
+      background-color: #d9f2d9; /* Green */
+    }
+
+    .card.sustainable-living {
+      background-color: #ffe5cc; /* Orange */
+    }
+
+    .card.reducing-footprint {
+      background-color: #f9d6d5; /* Red */
+    }
+
+    /* Card Content */
+    .card h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    /* Adjustments for mobile */
+    @media screen and (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+      }
+
+      .card {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Navbar Styles */
+    .navbarContainer {
+      background-color: #f9f9f9;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbarContainer img {
+      height: 4.3rem;
+    }
+
+    .navbarContainer .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbarContainer .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+
+    .navbarContainer .logo .text {
+      margin-left: 5px;
+    }
+
+    .home-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .home-links a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+
+    .home-links a:hover {
+      color: #007bff;
+    }
+
+    /* Header Styles */
+    .home-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbarContainer home-navbar-interactive" data-thq="thq-navbar">
+    <div class="navbar-logo">
+      <div class="logo-container">
+        <img src="images/logo main.png" alt="Logo">
+        <a href="index.html" class="logo">
+          <span class="logo-text">CARBON</span>
+        </a>
+      </div>
+    </div>
+    <div class="home-links" data-thq="thq-navbar-nav">
+      <nav>
+        <span class="bodySmall"><a href="milege.html">Calculate</a></span>
+        <span class="home-nav22 bodySmall"><a href="reduce.html">Reduce</a></span>
+        <span class="home-nav32 bodySmall"><a href="measure.html">Measures</a></span>
+        <span class="home-nav52 bodySmall"><a href="contact.html">Contact</a></span>
+      </nav>
+    </div>
+  </div>
+
+  <header class="home-header">
+    <h1>Living Sustainably</h1>
+  </header>
+
+  <div class="card-container">
+    <div class="card healthy-living">
+      <h2>Healthy Living</h2>
+      <ul>
+        <li>Exercise regularly</li>
+        <li>Eat healthy food</li>
+        <li>Drink plenty of fluids</li>
+        <li>Sleep well</li>
+        <li>Avoid stress</li>
+        <li>Limit alcohol intake</li>
+      </ul>
+    </div>
+    <div class="card sustainable-living">
+      <h2>Sustainable Living</h2>
+      <ul>
+        <li>Recycle</li>
+        <li>Drive less</li>
+        <li>Go paperless</li>
+        <li>Eat less meat</li>
+        <li>Grow your own produce</li>
+        <li>Save water</li>
+        <li>Consume fewer products overall</li>
+        <li>Purchase eco-friendly goods</li>
+        <li>Create less food waste</li>
+        <li>Reach out to your local government officials</li>
+      </ul>
+    </div>
+    <div class="card reducing-footprint">
+      <h2>Reducing Carbon Footprint</h2>
+      <ul>
+        <li>Insulate your home</li>
+        <li>Switch to renewables</li>
+        <li>Buy energy efficient appliances</li>
+        <li>Use less water</li>
+        <li>Change your diet</li>
+        <li>Turn off the lights</li>
+        <li>Go digital</li>
+        <li>Cycle to work</li>
+        <li>Turn down your water heater to 120˚F</li>
+        <li>Lower your thermostat in winter and raise it in summer</li>
+        <li>Turn off lights and unplug appliances when not in use</li>
+        <li>Change incandescent light bulbs</li>
+        <li>Use a low-flow showerhead</li>
+        <li>Look for an ENERGY STAR® symbol when buying new products</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

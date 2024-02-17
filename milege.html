@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="style3.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(255, 255, 255); /* Set background color */
+    }
+
+    header {
+      background-color: rgb(255, 255, 255); /* Set header background color */
+      padding: 10px 20px; /* Add padding to header */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-logo img {
+      height: 4.3rem;
+      margin-right: 10px; /* Add margin to separate logo and text */
+    }
+
+    .header-logo a {
+      font-size: 1.2rem; /* Set font size */
+      font-weight: bold; /* Set font weight to bold */
+      text-decoration: none; /* Remove underline */
+      color: black; /* Set color */
+    }
+
+    .header-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .home-links a {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Inherit text color */
+      cursor: pointer; /* Change cursor to pointer on hover */
+      transition: color 0.3s ease; /* Add smooth color transition */
+      margin-right: 4px; /* Add margin between links */
+      padding-right: 4px; /* Add padding to visually separate links */
+      border-right: 1px solid #ccc; /* Add border between links */
+    }
+
+    .home-links a:last-child {
+      margin-right: 0; /* Remove margin for the last link */
+      padding-right: 0; /* Remove padding for the last link */
+      border-right: none; /* Remove border for the last link */
+    }
+
+    /* Change text color on hover */
+    .home-links a:hover {
+      color: #007bff; /* Change color on hover */
+    }
+
+    /* Remove default anchor styles */
+    .navbarContainer .logo {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Style for mobile navigation */
+    .mobile-nav {
+      display: none;
+    }
+    @media screen and (max-width: 600px) {
+      /* Adjust card width for smaller screens */
+      .card {
+        width: calc(50% - 20px);
+      }
+
+      /* Show mobile navigation */
+      .home-desktop-menu {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    /* Style for collapsible sections */
+    .section {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .section-header {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .input-group {
+      display: none;
+    }
+
+    .input-group.active {
+      display: block;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="images/logo main.png">
+            <a href="index.html">CARBON</a>
+        </div>
+        <div class="header-links">
+            <nav class="home-links">
+                <span class="bodySmall"><a href="milege.html">Calculate</a></span>
+                <span class="home-nav22 bodySmall"><a href="reduce.html">Reduce</a></span>
+                <span class="home-nav32 bodySmall"><a href="measure.html">Measures</a></span>
+                
+                <span class="home-nav52 bodySmall"><a href="contact.html">Contact</a></span>
+            </nav>
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav">
+                <nav class="home-links">
+                    <span class="bodySmall"><a href="milege.html">Calculate</a></span>
+                    <span class="home-nav22 bodySmall"><a href="reduce.html">Reduce</a></span>
+                    <span class="home-nav32 bodySmall"><a href="measure.html">Measures</a></span>
+                    <span class="home-nav52 bodySmall"><a href="contact.html">Contact</a></span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+  <div class="container">
+    <!-- Home Section -->
+    <div class="section" id="home">
+      <h2 class="section-header" onclick="toggleSection('home')">Home</h2>
+      <div class="input-group">
+        <label for="electricity">Electricity Bill Price (per kWh):</label>
+        <input type="number" id="electricity" placeholder="Enter price (₹/kWh)">
+      </div>
+      <div class="input-group">
+        <label for="lpg">LPG Price (per kg):</label>
+        <input type="number" id="lpg" placeholder="Enter price (₹/kg)">
+      </div>
+    </div>
+
+    <!-- Car Section -->
+    <div class="section" id="car">
+      <h2 class="section-header" onclick="toggleSection('car')">Car</h2>
+      <div class="input-group">
+        <label for="fuelConsumption">Fuel Consumption (Mileage):</label>
+        <input type="number" id="fuelConsumption" placeholder="Enter consumption (Mileage)">
+      </div>
+      <div class="input-group">
+        <label for="distance">Distance Covered (km):</label>
+        <input type="number" id="distance" placeholder="Enter distance (km)">
+      </div>
+    </div>
+
+    <button id="calculateBtn" onclick="reduce()">Calculate</button>
+    <div id="result">
+      <div id="result1"></div>
+      <div id="result2"></div>
+      <div id="result3"></div>
+    </div>
+  </div>
+  <script src="reduce.js"></script>
+  <script>
+    function toggleSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      var inputGroups = section.getElementsByClassName('input-group');
+      for (var i = 0; i < inputGroups.length; i++) {
+        inputGroups[i].classList.toggle('active');
+      }
+    }
+  </script>
+</body>
+</html>

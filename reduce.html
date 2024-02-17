@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reduce Waste & Carbon Footprints</title>
+  <link rel="stylesheet" href="footprint.css">
+  <link rel="stylesheet" href="./style.css" />
+  <link href="./index.css" rel="stylesheet" />
+  <style>
+    /* Additional CSS styles */
+    /* ... */
+
+    /* Flip Card Styles */
+    .flip-card {
+      background-color: transparent;
+      width: 480px;
+      height: 600px;
+      perspective: 1000px;
+      margin-right: 20px;
+      display: inline-block;
+    }
+
+    .flip-card-inner {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #68dbf5;
+      color: black;
+    }
+
+    .flip-card-back {
+      background-color: #3ebc77;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    /* Adjustments for mobile */
+    @media screen and (max-width: 600px) {
+      .flip-card {
+        width: 100%; /* Make cards full width on smaller screens */
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbarContainer home-navbar-interactive" data-thq="thq-navbar">
+    <div class="navbar-logo">
+      <img src="images/logo main.png" alt="Logo">
+      <a href="index.html" class="logo">CARBON</a>
+    </div>
+    <div class="home-links" data-thq="thq-navbar-nav">
+      <nav>
+        <span class="bodySmall"><a href="milege.html">Calculate</a></span>
+        <span class="home-nav22 bodySmall"><a href="reduce.html">Reduce</a></span>
+        <span class="home-nav32 bodySmall"><a href="measure.html">Measures</a></span>
+        
+        <span class="home-nav52 bodySmall"><a href="contact.html">Contact</a></span>
+      </nav>
+    </div>
+  </div>
+  <header>
+    <h1>Reduce Waste & Carbon Footprints</h1>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="hero-video-container">
+        <video class="hero-video" preload="auto" loop muted autoplay playsinline width="800" height="720">
+          <source src="video/reduce.video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+    </section>
+    <section id="flip-cards">
+      <h2>Learn More</h2>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/household.png" alt="Household Activities">
+            <h3>Household Activities</h3>
+          </div>
+          <div class="flip-card-back">
+            <ol>
+              <li>Reduce energy use:
+                <ul>
+                  <li>Turn off lights and unplug appliances when not in use.</li>
+                  <li>Use energy-saving light bulbs.</li>
+                  <li>Turn down your water heater to 120°F.</li>
+                </ul>
+              </li>
+              <li>Use less water:
+                <ul>
+                  <li>Install a low-flow showerhead.</li>
+                </ul>
+              </li>
+              <li>Insulate your home:
+                <ul>
+                  <li>Insulate your home as much as possible.</li>
+                </ul>
+              </li>
+              <li>Use renewable energy:
+                <ul>
+                  <li>Install solar panels and battery storage to generate your own electricity.</li>
+                  <li>Use renewable energy sources as much as possible.</li>
+                </ul>
+              </li>
+              <li>Reduce waste:
+                <ul>
+                  <li>Reduce your trash output.</li>
+                  <li>Recycle and reuse.</li>
+                  <li>Go paperless.</li>
+                  <li>Pass on plastic.</li>
+                </ul>
+              </li>
+              <li>Change your diet:
+                <ul>
+                  <li>Buy fresh, local produce.</li>
+                  <li>Eat more vegetables.</li>
+                  <li>Throw away less food.</li>
+                </ul>
+              </li>
+              <li>Use sustainable transportation:
+                <ul>
+                  <li>Walk, bike, or take public transportation.</li>
+                  <li>Switch to an electric vehicle.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/transportation.png" alt="Transportation">
+            <h3>Transportation</h3>
+          </div>
+          <div class="flip-card-back">
+            <ol>
+              <li>Reduce travel:
+                <ul>
+                  <li>Walk, bike, or use public transportation when possible.</li>
+                  <li>Carpool with friends instead of driving alone.</li>
+                </ul>
+              </li>
+              <li>Use alternative modes of transportation:
+                <ul>
+                  <li>Use ride-sharing services.</li>
+                  <li>Participate in a car-share program.</li>
+                </ul>
+              </li>
+              <li>Use better vehicles:
+                <ul>
+                  <li>Buy vehicles with better fuel economy.</li>
+                  <li>Increase fuel efficiency.</li>
+                  <li>Avoid idling.</li>
+                  <li>Keep your tires filled.</li>
+                </ul>
+              </li>
+              <li>Improve vehicle technology:
+                <ul>
+                  <li>Service your vehicle regularly.</li>
+                  <li>Monitor speed and acceleration.</li>
+                  <li>Reduce fuel wasted in idling.</li>
+                  <li>Minimize aerodynamic drag.</li>
+                  <li>Drive in high gear.</li>
+                </ul>
+              </li>
+              <li>Use low-carbon fuels:
+                <ul>
+                  <li>Use biodiesel and bioethanol instead of diesel and gasoline.</li>
+                  <li>Transition to renewables and cleaner sources of fuel.</li>
+                </ul>
+              </li>
+              <li>Reduce transportation distance:
+                <ul>
+                  <li>Route planning optimization can help reduce carbon emissions.</li>
+                </ul>
+              </li>
+              <li>Improve vehicle efficiency:
+                <ul>
+                  <li>Use data analytics.</li>
+                  <li>Collaborate with suppliers and customers.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/industrialization.jpg" alt="Industrialization">
+            <h3>Industrialization</h3>
+          </div>
+          <div class="flip-card-back">
+            <ol>
+              <li>Energy efficiency:
+                <ul>
+                  <li>This can include using renewable energy, combined heat and power, and fuel switching.</li>
+                </ul>
+              </li>
+              <li>Green innovations:
+                <ul>
+                  <li>These are processes that create green products, which can reduce energy intensity and carbon emissions.</li>
+                </ul>
+              </li>
+              <li>Carbon sequestration:
+                <ul>
+                  <li>This is a major tool for reducing anthropogenic carbon emissions. It involves increasing the rate of woody vegetation plantations.</li>
+                </ul>
+              </li>
+              <li>Decarbonization:
+                <ul>
+                  <li>This is a method of reducing the carbon and methane emissions released by an industry. For example, steel manufacturers can change how they produce steel to significantly reduce their carbon footprint.</li>
+                </ul>
+              </li>
+              <li>Fossil fuel divestment:
+                <ul>
+                  <li>Investors can withdraw investments from fossil fuel companies to signal a shift in investment priorities towards a low-carbon future.</li>
+                </ul>
+              </li>
+              <li>Carbon capture and storage:
+                <ul>
+                  <li>This is a way to remove, reduce, and reuse carbon emissions that are already circulating in the air.</li>
+                </ul>
+              </li>
+              <li>Green business practices:
+                <ul>
+                  <li>These can reduce carbon emissions and the amount of pollution expended.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="footprint.js"></script>
+</body>
+</html>

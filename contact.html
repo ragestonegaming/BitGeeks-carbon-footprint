@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Gallery</title>
+<link rel="stylesheet" href="./style.css" /> <!-- Link to your external CSS file -->
+<link href="./index.css" rel="stylesheet" /> <!-- Link to your external CSS file -->
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #eef2f3, #bdd4e7); /* Default background */
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px; /* Added maximum width for responsiveness */
+    margin: 0 auto; /* Center the container */
+  }
+  .card {
+    width: calc(33.33% - 20px); /* Adjusted width to fit 3 cards in a row with some margin */
+    max-width: 200px; /* Added maximum width for responsiveness */
+    height: 320px; /* Increased height to accommodate the additional text */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #f9f9f9; /* Light background color */
+  }
+  .card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+  .card .name {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+  }
+  .card .role {
+    padding: 5px 10px;
+    text-align: center;
+    color: #777; /* Secondary text color */
+  }
+  .heading {
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Style for navigation links */
+  .home-links a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: color 0.3s ease; /* Add smooth color transition */
+  }
+
+  /* Change text color on hover */
+  .home-links a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+
+  /* Remove default anchor styles */
+  .navbarContainer .logo {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Style for mobile navigation */
+  .mobile-nav {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    /* Adjust card width for smaller screens */
+    .card {
+      width: calc(50% - 20px);
+    }
+
+    /* Show mobile navigation */
+    .home-desktop-menu {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav data-thq="thq-navbar" class="navbarContainer home-navbar-interactive">
+  <span class="navbar-logo">
+    <img src="images/logo main.png" style="height: 4.3rem;">
+  </span>
+  <!-- Make "CARBON" clickable -->
+  <a href="index.html" class="logo">CARBON</a>
+  <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+    <nav class="home-links">
+      <span class="bodySmall"><a href="milege.html">Calculate</a></span>
+      <span class="home-nav22 bodySmall"><a href="reduce.html">Reduce</a></span>
+      <span class="home-nav32 bodySmall"><a href="measure.html">Measures</a></span>
+      
+      <span class="home-nav52 bodySmall"><a href="contact.html">Contact</a></span>
+    </nav>
+  </div>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+  <nav class="home-links">
+    <span class="bodySmall"><a href="milege.html">Calculate</a></span>
+    <span class="home-nav22 bodySmall"><a href="reduce.html">Reduce</a></span>
+    <span class="home-nav32 bodySmall"><a href="measure.html">Measures</a></span>
+    
+    <span class="home-nav52 bodySmall"><a href="contact.html">Contact</a></span>
+  </nav>
+</div>
+
+<h1 class="heading">BitGeeks Carbon Footprint Project Team</h1>
+
+<div class="container">
+  <div class="card" onclick="window.location.href='https://www.linkedin.com/in/gaurav-vohra-265609241/';">
+    <img src="images/image10.jpeg" alt="Image 1">
+    <div class="name">Gaurav Vohra</div>
+    <div class="role">Team Leader</div>
+  </div>
+  <div class="card" onclick="window.location.href='https://www.linkedin.com/in/aryan-goel-00a546261/';">
+    <img src="images/image9.jpeg" alt="Image 2">
+    <div class="name">Aryan Goyal</div>
+    <div class="role">Collaborator</div>
+  </div>
+  <div class="card" onclick="window.location.href='https://www.linkedin.com/in/hitesh-kumar-nayak-1040971ba/';">
+    <img src="images/image11.jpeg" alt="Image 3">
+    <div class="name">Hitesh Kumar Nayak</div>
+    <div class="role">Collaborator</div>
+  </div>
+  <div class="card" onclick="window.location.href='https://www.linkedin.com/in/fuzail-ahamad/';">
+    <img src="images/image8.jpeg" alt="Image 4">
+    <div class="name">Fuzail Ahamad</div>
+    <div class="role">Collaborator</div>
+  </div>
+  <div class="card" onclick="window.location.href='https://www.linkedin.com/in/akshaj-kaushik-b0125a261/';">
+    <img src="images/image12.jpeg" alt="Image 5">
+    <div class="name">Akshaj Kumar Kaushik</div>
+    <div class="role">Collaborator</div>
+  </div>
+</div>
+
+<script>
+  // Function to generate a random light-colored background
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  // Apply the random background color to the body
+  document.body.style.background = getRandomColor();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+/* styles.css */
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f3f3f3; /* Optional background color */
+  }
+  .navbarContainer {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box; /* Add box-sizing */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    height: 4.3rem;
+    margin-right: 10px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .home-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .home-links nav {
+    margin-left: auto;
+  }
+
+  .home-links a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .home-links a:hover {
+    color: #007bff;
+  }
+  header {
+    padding: 20px 0px; /* Adjusted padding */
+  }
+  main,
+  footer {
+    width: 100%;
+  }
+  
+  header {
+    background-color: #4caf50; /* Green header */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main {
+    flex: 1; /* Take up remaining space */
+  }
+  
+  footer {
+    background-color: #4caf50; /* Green footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Hero section */
+  #hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full-height hero */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-video-container {
+    overflow: hidden; /* Contain video within its container */
+  }
+  
+  .hero-video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio while filling container */
+    object-fit: cover; /* Cover the container */
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  }
+  
+  /* Tips section */
+  #tips {
+    padding: 2rem;
+  }
+  
+  #tips h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #tips ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #tips li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Animations (optional) */
+  .hero-video {
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
