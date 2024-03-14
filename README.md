@@ -4,9 +4,9 @@ This is a Carbon Footprint Calculator website made by my team it also help begin
 
 Team Leader :- Gaurav Vohra :- https://www.linkedin.com/in/gaurav-vohra-265609241/
 
-Team Members :- Aryan Goel :- https://www.linkedin.com/in/aryan-goel-00a546261/
+Team Members :- Aryan Goel :- https://www.linkedin.com/in/aryangoyal013/
 
-  Akshaj Kumar Kaushik :- https://www.linkedin.com/in/akshaj-kaushik-b0125a261/
+  Akshaj Kumar Kaushik :- https://www.linkedin.com/in/akshaj-kaushik/
                 
 Hitesh Kumar Nayak :- https://www.linkedin.com/in/hitesh-kumar-nayak-1040971ba/
                 
